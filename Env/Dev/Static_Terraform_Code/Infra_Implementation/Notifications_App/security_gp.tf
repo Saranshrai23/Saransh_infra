@@ -6,29 +6,25 @@ resource "aws_security_group" "notification_sg" {
 
   ingress {
 
-    description = "Application Port"
+    description = "Allow traffic from Application Load Balancer"
 
     from_port = var.notification_port
+    to_port   = var.notification_port
+    protocol  = "tcp"
 
-    to_port = var.notification_port
-
-    protocol = "tcp"
-
-    cidr_blocks = [
-      "0.0.0.0/0"
+    security_groups = [
+      var.alb_security_group_id
     ]
 
   }
 
   egress {
 
-    description = "Allow All Outbound"
+    description = "Allow all outbound traffic"
 
     from_port = 0
-
-    to_port = 0
-
-    protocol = "-1"
+    to_port   = 0
+    protocol  = "-1"
 
     cidr_blocks = [
       "0.0.0.0/0"
