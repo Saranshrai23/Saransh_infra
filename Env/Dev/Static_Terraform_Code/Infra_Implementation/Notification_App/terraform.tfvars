@@ -1,0 +1,10 @@
+subnet_ids = [
+  "subnet-xxxxxxxx",
+  "subnet-yyyyyyyy"
+]
+
+min_size = 1
+
+max_size = 2
+
+desired_capacity = 1
