@@ -1,15 +1,17 @@
 aws_region = "us-east-1"
 
-environment = "dev"
-
-application = "Notification"
-
-owner = "Infra-Titans"
-
-cost_center = "Snaatak"
+vpc_id = "vpc-xxxxxxxx"
 
 notification_sg_name = "dev-otms-notification-sg"
 
 notification_port = 8085
 
-vpc_id = "vpc-xxxxxxxx"
+alb_security_group_id = "sg-xxxxxxxx"
+
+application = "Notification"
+
+owner = "Infra-Titans"
+
+environment = "dev"
+
+cost_center = "Snaatak"
