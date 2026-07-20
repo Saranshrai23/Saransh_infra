@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket       = "otms-terraform-state-dev"
+    bucket       = "otms-terraform-state-dev-788572613316"
     key          = "network/nat.tfstate"
     region       = "us-east-1"
     encrypt      = true
