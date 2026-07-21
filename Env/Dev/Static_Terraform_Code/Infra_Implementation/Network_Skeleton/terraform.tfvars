@@ -10,7 +10,7 @@ vpc_name = "dev-otms-vpc"
 public_subnet_a_name = "dev_otms_public_subnet_a"
 public_subnet_b_name = "dev_otms_public_subnet_b"
 
-certificate_arn = "arn:aws:acm:us-east-1:547941801997:certificate/32c737a7-fe13-4f7e-b4bc-ace9d3eaf9b5"
+certificate_arn = "arn:aws:acm:us-east-1:788572613316:certificate/e988e494-7ffa-4d38-8589-62f2329008b7"
 
 ssl_policy = "ELBSecurityPolicy-TLS13-1-2-2021-06"
 
