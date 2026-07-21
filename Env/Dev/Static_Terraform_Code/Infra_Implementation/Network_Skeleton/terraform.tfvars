@@ -10,10 +10,10 @@ cost_center = "Snaatak"
 alb_name = "dev-otms-alb"
 
 # New Route 53 public hosted zone
-hosted_zone_name = "otms.online"
+hosted_zone_name = "saransh.shop"
 
 # New DNS record pointing to the existing ALB
-domain_name = "www.otms.online"
+domain_name = "www.saransh.shop"
 
 vpc_cidr  = "10.0.0.0/24"
 vpc_name  = "dev-otms-vpc"
