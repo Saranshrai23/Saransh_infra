@@ -1,0 +1,33 @@
+aws_region = "us-east-1"
+
+environment = "dev"
+application = "otms"
+owner       = "Infra-Titans"
+cost_center = "Snaatak"
+
+# Existing resources visible in your VPC resource map
+vpc_name = "dev-otms-vpc"
+
+database_subnet_a_name = "dev_otms_database_subnet_a"
+database_subnet_b_name = "dev_otms_database_subnet_b"
+
+# PostgreSQL
+postgres_identifier            = "dev-otms-attendance-postgres"
+postgres_database_name         = "attendance_db"
+postgres_master_username       = "attendance_admin"
+postgres_instance_class        = "db.t3.micro"
+postgres_allocated_storage     = 20
+postgres_max_allocated_storage = 100
+
+# Development settings
+postgres_multi_az              = false
+postgres_backup_retention_days = 1
+postgres_skip_final_snapshot   = true
+postgres_deletion_protection   = false
+
+# Redis
+redis_replication_group_id    = "dev-otms-attendance-redis"
+redis_node_type               = "cache.t3.micro"
+redis_engine_version          = "7.1"
+redis_parameter_group_name    = "default.redis7"
+redis_snapshot_retention_days = 1
