@@ -1,0 +1,25 @@
+# Copy this file first:
+# cp dev.pkrvars.hcl.example dev.pkrvars.hcl
+
+aws_region = "us-east-1"
+
+# Existing OTMS VPC.
+vpc_id = "vpc-087f67f732c5053a4"
+
+# IMPORTANT: Replace this with a PUBLIC subnet ID that has:
+# 1. A route to the Internet Gateway
+# 2. Auto-assign public IPv4 enabled, or Packer public-IP association allowed
+subnet_id = "subnet-REPLACE_WITH_PUBLIC_SUBNET_ID"
+
+instance_type = "t3.micro"
+
+app_repo = "https://github.com/OT-MICROSERVICES/attendance-api.git"
+app_ref  = "main"
+
+poetry_version = "1.8.5"
+ami_name_prefix = "dev-otms-attendance"
+
+environment = "dev"
+application = "otms"
+owner       = "Infra-Titans"
+cost_center = "Snaatak"
