@@ -9,7 +9,7 @@ vpc_id = "vpc-087f67f732c5053a4"
 # IMPORTANT: Replace this with a PUBLIC subnet ID that has:
 # 1. A route to the Internet Gateway
 # 2. Auto-assign public IPv4 enabled, or Packer public-IP association allowed
-subnet_id = "subnet-REPLACE_WITH_PUBLIC_SUBNET_ID"
+subnet_id = "subnet-0d7d65c68e07be8a8"
 
 instance_type = "t3.micro"
 
